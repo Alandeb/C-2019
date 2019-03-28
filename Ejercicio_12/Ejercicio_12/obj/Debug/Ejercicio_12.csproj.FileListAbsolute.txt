@@ -1,0 +1,7 @@
+D:\Alan Debonis\Csharp-19\Ejercicio_12\Ejercicio_12\obj\Debug\Ejercicio_12.csprojAssemblyReference.cache
+D:\Alan Debonis\Csharp-19\Ejercicio_12\Ejercicio_12\obj\Debug\Ejercicio_12.csproj.CoreCompileInputs.cache
+D:\Alan Debonis\Csharp-19\Ejercicio_12\Ejercicio_12\bin\Debug\Ejercicio_12.exe.config
+D:\Alan Debonis\Csharp-19\Ejercicio_12\Ejercicio_12\bin\Debug\Ejercicio_12.exe
+D:\Alan Debonis\Csharp-19\Ejercicio_12\Ejercicio_12\bin\Debug\Ejercicio_12.pdb
+D:\Alan Debonis\Csharp-19\Ejercicio_12\Ejercicio_12\obj\Debug\Ejercicio_12.exe
+D:\Alan Debonis\Csharp-19\Ejercicio_12\Ejercicio_12\obj\Debug\Ejercicio_12.pdb
