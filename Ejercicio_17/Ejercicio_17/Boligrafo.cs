@@ -40,12 +40,18 @@ namespace Ejercicio_17
 
         public bool Pintar (int gasto,out string dibujo)
         {
+            int gas = gasto;
+            dibujo = "*";
             do
             {
                 tinta = GetTinta();
                 if (tinta == 0)
                 {
-                    dibujo = "*"; 
+                    
+                    for (int i = 0; i < gas-gasto; i++)
+                    {
+                        dibujo = dibujo + "*";   
+                    } 
                     return false;
                 }
                 else
@@ -54,14 +60,17 @@ namespace Ejercicio_17
                     {
                         gasto--;
                         SetTinta(tinta--);
-                        dibujo = "*";
-                        return true;
+                        
+                        
                     }
                 }
-            } while (gasto == 0);
-
-            dibujo = "*";
+            } while (gasto != 0);
+            for (int i = 0; i < gas - gasto; i++)
+            {
+                dibujo = dibujo + "*";
+            }
             return true;
+            
         }
 
     }
