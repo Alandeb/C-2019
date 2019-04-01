@@ -30,6 +30,13 @@ namespace Ejercicio_19
             return a + b;
         }
 
+        public static explicit operator int (Sumador s)
+        {
+            int a;
+            a = s.cantidadSumas;
+            return a;
+        }
+
 
     }
 }
