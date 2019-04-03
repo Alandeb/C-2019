@@ -1,7 +1,0 @@
-D:\Alan Debonis\C.net2019\ejercicio_9\ejercicio_9\bin\Debug\ejercicio_9.exe.config
-D:\Alan Debonis\C.net2019\ejercicio_9\ejercicio_9\bin\Debug\ejercicio_9.exe
-D:\Alan Debonis\C.net2019\ejercicio_9\ejercicio_9\bin\Debug\ejercicio_9.pdb
-D:\Alan Debonis\C.net2019\ejercicio_9\ejercicio_9\obj\Debug\ejercicio_9.csprojAssemblyReference.cache
-D:\Alan Debonis\C.net2019\ejercicio_9\ejercicio_9\obj\Debug\ejercicio_9.csproj.CoreCompileInputs.cache
-D:\Alan Debonis\C.net2019\ejercicio_9\ejercicio_9\obj\Debug\ejercicio_9.exe
-D:\Alan Debonis\C.net2019\ejercicio_9\ejercicio_9\obj\Debug\ejercicio_9.pdb
