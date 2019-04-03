@@ -18,6 +18,7 @@ namespace Ejercicio_17
         }
         public ConsoleColor GetColor()
         {
+            
             return color;
         }
         public short GetTinta()

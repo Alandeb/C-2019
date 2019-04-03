@@ -15,6 +15,7 @@ namespace Ejercicio_17
             string dibujo;
             if(boligrafo1.Pintar(10, out dibujo))
             {
+                Console.BackgroundColor = boligrafo1.GetColor();
                 Console.WriteLine(dibujo);
             }
             else
@@ -24,6 +25,7 @@ namespace Ejercicio_17
 
             if (boligrafo2.Pintar(20, out dibujo))
             {
+                Console.BackgroundColor = boligrafo2.GetColor();
                 Console.WriteLine(dibujo);
             }
             else
