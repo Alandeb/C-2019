@@ -46,5 +46,12 @@ namespace Ejercicio_20
             Pesos nPesos = new Pesos(d.cantidad * Pesos.GetCotizacion());
             return nPesos;
         }
+
+        public static implicit operator Dolar(double d)
+        {
+            Dolar dolar = new Dolar(0);
+            dolar = d ;
+            return dolar;
+        }
     }
 }

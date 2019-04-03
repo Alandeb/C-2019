@@ -49,8 +49,32 @@ namespace Ejercicio_20
             Pesos nPesos = new Pesos(d.GetCantidad()/Pesos.GetCotizacion());
             return nPesos;
         }
-       
 
+        public static implicit operator Euro(double d)
+        {
+            Euro euro = new Euro(0);
+            euro = d;
+            return euro;
+        }
 
+        public static bool operator !=(Euro e, Dolar d)
+        {
+            bool r = false;
+            if (e != d)
+            {
+                r = true;
+            }
+            return r;
+        }
+
+        public static bool operator ==(Euro e, Dolar d)
+        {
+            bool r = false;
+            if (e == d)
+            {
+                r = true;
+            }
+            return r;
+        }
     }
 }

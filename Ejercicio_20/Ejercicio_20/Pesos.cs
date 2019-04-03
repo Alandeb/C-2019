@@ -38,7 +38,23 @@ namespace Ejercicio_20
         }
         public static explicit operator Dolar (Pesos p)
         {
-            Dolar nDolar = new Dolar(p.cantidad* p.);
+            Dolar nDolar = new Dolar(p.cantidad*cotizRespectoDolar);
+            return nDolar;
+        }
+        public static explicit  operator Euro (Pesos p)
+        {
+            Dolar d = new Dolar(0);
+            d = (Dolar)p;
+            Euro e = new Euro(0);
+            e = (Euro)d;
+            return e;
+        }
+
+        public static implicit operator Pesos(double d)
+        {
+            Pesos pesos = new Pesos(0);
+            pesos = d;
+            return pesos;
         }
     }
 }
