@@ -22,7 +22,7 @@ namespace Ejercicio_Clase_5
         {
             return productos;
         }
-        public string MostrarEstante(Estante e)
+        public static string MostrarEstante(Estante e)
         {
             string mostrar= "";
             foreach (Producto p in e.productos)
@@ -38,7 +38,7 @@ namespace Ejercicio_Clase_5
             bool r = false ;
             foreach (Producto p2 in e.productos)
             {
-                if (p2 == p && !(object.ReferenceEquals(p2, null)))
+                if (!(object.ReferenceEquals(p2, null)) && !(object.ReferenceEquals(p, null)) && p2 == p )
                 {
                     r = true;
                     break;
@@ -48,12 +48,36 @@ namespace Ejercicio_Clase_5
         }
         public static bool operator !=(Estante e, Producto p)
         {
-            e.productos.Length//fijarse que mas se puede usar 
-
             return (!(e == p));
            
         }
        
-        public static bool operator +()
+        public static bool operator +(Estante e,Producto p)
+        {
+            if (!(e == p))         
+            {
+                for(int i =0; i<e.productos.Length; i++)
+                {
+                    if (object.ReferenceEquals(e.productos[i], null))
+                    {
+                        e.productos[i] = p;
+                        return true;
+                    }
+                } 
+            }
+            return false;
+        }
+        public static Estante operator -(Estante e, Producto p)
+        {
+            for (int i = 0; i < e.productos.Length; i++)
+            {
+                if (e.productos[i] == p)
+                {
+                    e.productos[i] = null;
+                    return e;
+                }
+            }
+            return e;
+        }
     }
 }

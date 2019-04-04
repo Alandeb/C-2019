@@ -54,10 +54,13 @@ namespace Ejercicio_Clase_5
         public static bool operator !=(Producto p, Producto p2)
         {
             bool r = false;
-            if ((p.marca != p2.marca) &&(p.codigoDeBarra != p2.codigoDeBarra))
-            {
-                r = true;
-            }
+            
+   
+                if ((p.marca != p2.marca) && (p.codigoDeBarra != p2.codigoDeBarra))
+                {
+                    r = true;
+                }
+            
             return r;
         }
         public static bool operator ==(Producto p, Producto p2)
