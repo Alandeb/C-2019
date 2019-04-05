@@ -52,8 +52,7 @@ namespace Ejercicio_20
 
         public static implicit operator Pesos(double d)
         {
-            Pesos pesos = new Pesos(0);
-            pesos = d;
+            Pesos pesos = new Pesos(d);
             return pesos;
         }
     }

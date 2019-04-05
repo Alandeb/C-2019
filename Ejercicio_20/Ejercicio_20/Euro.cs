@@ -52,8 +52,7 @@ namespace Ejercicio_20
 
         public static implicit operator Euro(double d)
         {
-            Euro euro = new Euro(0);
-            euro = d;
+            Euro euro = new Euro(d);
             return euro;
         }
 
@@ -70,7 +69,9 @@ namespace Ejercicio_20
         public static bool operator ==(Euro e, Dolar d)
         {
             bool r = false;
-            if (e == d)
+            double can1 = d.GetCantidad();
+            double can2 = e.GetCantidad();// pasar a la misma moneda
+            if (can1 == can2 )
             {
                 r = true;
             }

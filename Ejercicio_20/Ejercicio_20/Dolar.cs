@@ -49,8 +49,7 @@ namespace Ejercicio_20
 
         public static implicit operator Dolar(double d)
         {
-            Dolar dolar = new Dolar(0);
-            dolar = d ;
+            Dolar dolar = new Dolar(d);
             return dolar;
         }
     }
