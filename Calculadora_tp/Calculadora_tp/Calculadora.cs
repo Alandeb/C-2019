@@ -10,6 +10,8 @@ namespace Calculadora_tp
     {
         public double Operar(Numero num1 , Numero num2 , string operador)
         {
+            dou;
+            if()
             return 1;
         }
 

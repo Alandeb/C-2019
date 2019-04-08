@@ -46,5 +46,10 @@ namespace Calculadora_tp
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
