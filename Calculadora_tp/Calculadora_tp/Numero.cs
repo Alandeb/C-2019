@@ -31,8 +31,11 @@ namespace Calculadora_tp
         private double ValidarNumero(string strNumero)
         {
             double numero;
-            double.TryParse(strNumero, out numero);
-            return numero;
+            if(double.TryParse(strNumero, out numero))
+			{
+				return numero;
+			}
+			
         }
 
         public static double operator +(Numero n1 , Numero n2)
