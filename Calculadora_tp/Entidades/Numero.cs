@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Numero
+    public class Numero
     {
         private double numero;
 
@@ -57,16 +57,34 @@ namespace Entidades
 
         public string BinarioDecimal(string binario)
         {
-            Int64 num = Convert.ToInt64(binario, 2);
-            if (num < 0)
+            int i;
+            double total = 0;
+            double potencia = 0;
+            int flag = 0;
+            string cadena = "";
+
+
+            for (i = binario.Length - 1; i >= 0; i--)
             {
-                return Convert.ToInt64(binario, 2).ToString();
+                if (binario[i] == '1')
+                {
+                    total = total + (Math.Pow(2, potencia) * 1);
+                    potencia++;
+                }
+                else if (binario[i] == '0')
+                {
+                    potencia++;
+                }
+                else
+                {
+                    return "Valor invalido";
+                }
             }
-            else if(num>0)
+            if (flag == 0)
             {
-                return Convert.ToInt64(binario, 2).ToString();
+                cadena = Convert.ToString(total);
             }
-            return "Valor invalido";
+            return cadena;
         }
         public string DecimalBinario(double numero)
         {
@@ -85,6 +103,7 @@ namespace Entidades
         }
         public string DecimalBinario(string numero)
         {
+            
             numero = DecimalBinario(Convert.ToDouble(numero));
             return numero;
         }

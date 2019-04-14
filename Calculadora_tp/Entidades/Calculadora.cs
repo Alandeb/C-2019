@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Calculadora
+    public class Calculadora
     {
-        public double Operar(Numero num1, Numero num2, string operador)
+        public static double Operar(Numero num1, Numero num2, string operador)
         {
             double resultado=0;
             operador = ValidarOperador(operador);
@@ -38,7 +38,7 @@ namespace Entidades
 
         private static string ValidarOperador(string operador)
         {
-            if (operador != "/" || operador != "+" || operador != "-" || operador != "*")
+            if (operador != "/" && operador != "+" && operador != "-" && operador != "*")
             {
                 operador = "+";
             }
