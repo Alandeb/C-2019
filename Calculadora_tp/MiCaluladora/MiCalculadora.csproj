@@ -46,14 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculadora.cs" />
     <Compile Include="FormCalculadora.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCalculadora.Designer.cs">
       <DependentUpon>FormCalculadora.cs</DependentUpon>
     </Compile>
-    <Compile Include="Numero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCalculadora.resx">
