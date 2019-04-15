@@ -57,34 +57,37 @@ namespace Entidades
 
         public string BinarioDecimal(string binario)
         {
-            int i;
+            
             double total = 0;
             double potencia = 0;
-            int flag = 0;
-            string cadena = "";
-
-
-            for (i = binario.Length - 1; i >= 0; i--)
+            int binarioInt;
+            if (int.TryParse(binario, out binarioInt))
             {
-                if (binario[i] == '1')
+                if(binarioInt < 0)
                 {
-                    total = total + (Math.Pow(2, potencia) * 1);
-                    potencia++;
+                    binarioInt += -1;
+                    binario = Convert.ToString(binarioInt);
                 }
-                else if (binario[i] == '0')
+                    
+                for (int i = binario.Length - 1; i >= 0; i--)
                 {
-                    potencia++;
+                    if (binario[i] == '1')
+                    {
+                        total = total + (Math.Pow(2, potencia) * 1);
+                        potencia++;
+                    }
+                    else if (binario[i] == '0')
+                    {
+                        potencia++;
+                    }
+                    else
+                    {
+                        return "Valor invalido";
+                    }
                 }
-                else
-                {
-                    return "Valor invalido";
-                }
+                return Convert.ToString(total);
             }
-            if (flag == 0)
-            {
-                cadena = Convert.ToString(total);
-            }
-            return cadena;
+            return "Valor invalido";
         }
         public string DecimalBinario(double numero)
         {

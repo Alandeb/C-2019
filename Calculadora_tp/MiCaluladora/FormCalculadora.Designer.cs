@@ -140,9 +140,9 @@
             this.lblResultado.Location = new System.Drawing.Point(250, 24);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblResultado.Size = new System.Drawing.Size(29, 20);
+            this.lblResultado.Size = new System.Drawing.Size(0, 20);
             this.lblResultado.TabIndex = 9;
-            this.lblResultado.Text = "00";
+            this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // FormCalculadora
             // 

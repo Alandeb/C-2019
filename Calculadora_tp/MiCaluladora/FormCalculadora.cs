@@ -77,7 +77,7 @@ namespace Calculadora_tp
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             
-            if(lblResultado.Text == "00" )
+            if(lblResultado.Text == "" )
             {
                 double numD;
                 double.TryParse(txtNumero1.Text, out numD);
@@ -93,7 +93,7 @@ namespace Calculadora_tp
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            if (lblResultado.Text == "00")
+            if (lblResultado.Text == "")
             {
                 
                 Numero num1 = new Numero(txtNumero1.Text);
@@ -104,6 +104,11 @@ namespace Calculadora_tp
                 Numero num1 = new Numero(lblResultado.Text);
                 lblResultado.Text = num1.BinarioDecimal(lblResultado.Text);
             }
+        }
+
+        private void lblResultado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
