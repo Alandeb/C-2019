@@ -11,7 +11,8 @@ namespace Ejercicio_1
         static void Main(string[] args)
         {
             Console.Title = "Ejercicio Nro 01";
-            
+            //dhaiahfoiajf
+			
             int[] Numeros = new int [5];
             string nose;
             int contador = 0;
