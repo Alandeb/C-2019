@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_37_Herencia", "Ejercicio_37_Herencia\Ejercicio_37_Herencia.csproj", "{4CE2F9F6-4C85-4940-A5C2-56D8B38B5521}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CE2F9F6-4C85-4940-A5C2-56D8B38B5521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE2F9F6-4C85-4940-A5C2-56D8B38B5521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE2F9F6-4C85-4940-A5C2-56D8B38B5521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE2F9F6-4C85-4940-A5C2-56D8B38B5521}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7608EE0-D043-4077-BF5B-DC31C7AD7B00}
+	EndGlobalSection
+EndGlobal

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{874CB5A9-B3B3-46E3-945B-6F0BB880061B}</ProjectGuid>
+    <ProjectGuid>{4CE2F9F6-4C85-4940-A5C2-56D8B38B5521}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ejercicio_31</RootNamespace>
-    <AssemblyName>Ejercicio_31</AssemblyName>
+    <RootNamespace>Ejercicio_37_Herencia</RootNamespace>
+    <AssemblyName>Ejercicio_37_Herencia</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Negocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuestoAtencion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
