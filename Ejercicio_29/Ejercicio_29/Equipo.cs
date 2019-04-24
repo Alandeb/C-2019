@@ -23,7 +23,19 @@ namespace Ejercicio_29
         }
         public static bool operator +(Equipo e,Jugador j)
         {
-
+           if (jugadores.Count() < e.cantidadDeJugadores )
+           {
+                foreach (Jugador jug in jugadores)
+                {
+                    if (j == jug)
+                    {
+                        return false;
+                    }
+                }
+                jugadores.Add(j);
+                return true;
+           }
+            return false;
         }
     }
 }
