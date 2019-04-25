@@ -12,7 +12,7 @@ namespace Ejercicio_29
         private  int partidosJugados;
         private  int totalGoles;
         private  string nombre;
-        private  static float promedioGoles;
+        private  float promedioGoles;
 
         private Jugador()
         {
@@ -21,13 +21,13 @@ namespace Ejercicio_29
             promedioGoles = 0;
         }
 
-        public Jugador(int dni,string nombre)
+        public Jugador(int dni,string nombre):this()//Esto llama al constructor privado
         {
             this.dni = dni;
             this.nombre = nombre;
 
         }
-        public  Jugador(int dni, string nombre,int totalGoles,int totalPartidos)
+        public  Jugador(int dni, string nombre,int totalGoles,int totalPartidos):this()
         {
             this.dni = dni;
             this.nombre = nombre;
