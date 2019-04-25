@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_37_Herencia
 {
-    class Llamada
+    abstract class Llamada
     {
         protected float duracion;
         protected string nroDestino;
