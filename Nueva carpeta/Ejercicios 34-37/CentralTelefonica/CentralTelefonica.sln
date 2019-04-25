@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralTelefonica", "CentralTelefonica\CentralTelefonica.csproj", "{7F752C2D-9AFA-4BB6-B999-AED497F3AA31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio 37", "Ejercicio 37\Ejercicio 37.csproj", "{FDA09040-8272-46FE-BA73-B4D6BDB7D9D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F752C2D-9AFA-4BB6-B999-AED497F3AA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F752C2D-9AFA-4BB6-B999-AED497F3AA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F752C2D-9AFA-4BB6-B999-AED497F3AA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F752C2D-9AFA-4BB6-B999-AED497F3AA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA09040-8272-46FE-BA73-B4D6BDB7D9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA09040-8272-46FE-BA73-B4D6BDB7D9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA09040-8272-46FE-BA73-B4D6BDB7D9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA09040-8272-46FE-BA73-B4D6BDB7D9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B5FB890-7048-449A-AFB2-4F1EA2EE69EB}
+	EndGlobalSection
+EndGlobal
