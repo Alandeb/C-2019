@@ -55,7 +55,9 @@ namespace VistaConsola
                 Console.WriteLine("El equipo es válido");
             else
                 Console.WriteLine("El equipo no es válido");
-            Console.ReadKey();
+            Console.ReadKey();
+
+
         }
     }
 }
