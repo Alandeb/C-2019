@@ -10,6 +10,7 @@ namespace VistaConsola
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
