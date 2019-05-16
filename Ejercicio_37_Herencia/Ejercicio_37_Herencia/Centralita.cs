@@ -8,8 +8,26 @@ namespace Ejercicio_37_Herencia
 {
     class Centralita
     {
-        List<Llamada> listaDeLlamada;
-        string razonSocial;
+        private List<Llamada> listaDeLlamada;
+        protected string razonSocial;
+
+        public float GananciaPorLocal
+        {
+            get { }
+        }
+        public Centralita()
+        {
+            listaDeLlamada = new List<Llamada>();
+        }
+        public Centralita(string nombreEmpresa): this()
+        {
+            razonSocial = nombreEmpresa;
+        }
+
+        private float  CalcularGanancia(Llamada.TipoLlamada tipo)
+        {
+            return 0;
+        }
         
     }
 }
