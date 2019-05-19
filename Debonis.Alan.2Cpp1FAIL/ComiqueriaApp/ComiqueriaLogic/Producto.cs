@@ -48,8 +48,7 @@ namespace ComiqueriaLogic
 
         public static explicit operator Guid(Producto p)
         {
-            Guid g = new Guid(p.codigo.ToString());
-            return g;
+            return p.codigo;
         }
         /// <summary>
         /// Cadena de caracteres con toda la descripcion

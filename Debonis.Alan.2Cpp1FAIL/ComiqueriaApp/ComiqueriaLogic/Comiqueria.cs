@@ -15,6 +15,21 @@ namespace ComiqueriaLogic
             productos = new List<Producto>();
             ventas = new List<Venta>();
         }
+        public Producto this[Guid codigo]
+        {
+            get
+            {
+                Producto r = null;
+                foreach (Producto producto in productos)
+                {
+                    if ((Guid)producto == codigo)
+                    {
+                        r = producto;
+                    }
+                }
+                return r;
+            }
+        }
         /// <summary>
         /// verificara dos objetos para ver si son iguales
         /// </summary>
@@ -66,9 +81,10 @@ namespace ComiqueriaLogic
             Vender(producto, 1);
         }
 
-        public string ListaVentas()
+        public string ListarVentas()
         {
             StringBuilder cadena = new StringBuilder();
+            ventas = ventas.OrderBy(ventas => ventas.Fecha).ToList();
             foreach (Venta v in ventas)
             {
                 cadena.AppendFormat(v.ObtenerDescripcionBreve());
@@ -76,6 +92,16 @@ namespace ComiqueriaLogic
             return cadena.ToString();
         }
 
-        
+        public Dictionary<Guid, string> ListarProductos()
+        {
+            Dictionary<Guid, string> dProductos = new Dictionary<Guid, string>();
+            foreach (Producto producto in productos)
+            {
+                dProductos.Add((Guid)producto, producto.Descripcion);
+            }
+
+            return dProductos;
+        }
+
     }
 }
